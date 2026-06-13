@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Test html</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	
+	<link rel="stylesheet" media="all" href="css/style.css"  />
+	
+</head>
+
+<body>
+	<div class="bg-footer-right"></div>
+	<header>
+		<div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+		<div class="info-head">
+			<div class="row">
+				<div class="title">monblanproject</div>
+				<div class="star">Start on  17-02-2016</div>
+			</div>
+			<div class="row follow-wrap">
+				<ul>
+					<li>
+						<strong>870</strong> posts
+					</li>
+					<li>
+						<strong>11,787</strong> followers
+					</li>
+					<li>
+						<strong>112</strong> following
+					</li>
+				</ul>
+			</div>
+			<div class="row calendar-wrap">
+				<div class="text">Date</div>
+				<div class="flatpickr" id="my-calendar-from">
+					<input type="text" placeholder="from" data-input>
+					<button type="button" class="input-button close" title="clear" data-clear><i></i></button>
+					<button type="button" class="input-button cal" title="toggle" data-toggle><i></i></button>
+				</div>
+				<div class="flatpickr" id="my-calendar-to">
+					<input type="text" placeholder="to" data-input>
+					<button type="button" class="input-button close" title="clear" data-clear><i></i></button>
+					<button type="button" class="input-button cal" title="toggle" data-toggle><i></i></button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="wrap">
+		<div class="cards-wrap">
+			<div class="select-view">
+				<a href="javascript:void(0)" onclick="grid()" class="icon grid"><i></i></a>
+				<a href="javascript:void(0)" onclick="list()" class="icon list"><i></i></a>
+			</div>
+			<div id="view-select">
+				<div class="card">
+					<div class="card-image"><img src="images/img01.jpg" alt=""></div>
+					<div class="card-info clearfix">
+						<p class="text">Today</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">9-08-2016</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">Image upload</p>
+						<div class="data">11-04-2016</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image"><img src="images/img02.jpg" alt=""></div>
+					<div class="card-info clearfix">
+						<p class="text">Today</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">9-08-2016</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">Image upload</p>
+						<div class="data">11-04-2016</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image"><img src="images/img03.jpg" alt=""></div>
+					<div class="card-info clearfix">
+						<p class="text">Today</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">9-08-2016</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info">
+						<p class="text">Image upload</p>
+						<div class="data">11-04-2016</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image"><img src="images/img04.jpg" alt=""></div>
+					<div class="card-info clearfix">
+						<p class="text">Today</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">9-08-2016</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info">
+						<p class="text">Image upload</p>
+						<div class="data">11-04-2016</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image"><img src="images/img05.jpg" alt=""></div>
+					<div class="card-info clearfix">
+						<p class="text">Today</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">9-08-2016</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">Image upload</p>
+						<div class="data">11-04-2016</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image"><img src="images/img06.jpg" alt=""></div>
+					<div class="card-info clearfix">
+						<p class="text">Today</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">9-08-2016</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">Image upload</p>
+						<div class="data">11-04-2016</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image"><img src="images/img07.jpg" alt=""></div>
+					<div class="card-info clearfix">
+						<p class="text">Today</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">9-08-2016</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">Image upload</p>
+						<div class="data">11-04-2016</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image"><img src="images/img01.jpg" alt=""></div>
+					<div class="card-info clearfix">
+						<p class="text">Today</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">9-08-2016</p>
+						<div class="wish-comments-box">
+							<a href="#" class="item wish">128</a>
+							<a href="#" class="item comments">31</a>
+						</div>
+					</div>
+					<div class="card-info clearfix">
+						<p class="text">Image upload</p>
+						<div class="data">11-04-2016</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-more"><a href="#">LOAD MORE</a></div>
+		</div>
+	</div>
+
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
