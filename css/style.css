@@ -475,6 +475,9 @@ span.flatpickr-weekday{
 	.calendar-wrap .text{
 		display: none;
 	}
+	.calendar-wrap .flatpickr-input {
+		width: 140px;
+	}
 }
 
 
